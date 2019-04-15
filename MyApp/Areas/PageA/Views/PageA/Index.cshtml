@@ -1,0 +1,57 @@
+﻿<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0 text-dark">Hello, I'm from Page A</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Submenu</a></li>
+                    <li class="breadcrumb-item active">Page A</li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header no-border">
+                        <h3 class="card-title">Dependency Injection</h3>
+                    </div><!-- /.card-header -->
+                    <div class="card-body" style="min-height:250px">
+                        @ViewBag.TestData
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header no-border">
+                        <h3 class="card-title">Test api</h3>
+                    </div><!-- /.card-header -->
+                    <div class="card-body" style="min-height:250px">
+                        <form method="post" id="testform">
+                            <div class="form-group">
+                                <label class="col-md-3 col-form-label">What is your name?</label>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" id="data" name="data">
+                                </div>
+                            </div>
+                            <div class="form-group float-right">
+                                <a href="#" id="smt" class="btn btn-primary">Submit</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <h2></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

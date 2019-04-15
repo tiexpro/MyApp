@@ -1,0 +1,234 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+
+    .skin-custom .treeview-menu > li > a,
+    .skin-custom .treeview-menu > li.active > a,
+    .skin-custom .treeview-menu > li > a:hover {
+        color: #ffffff;
+    }
+
+    .card {
+        border: 0 !important;
+        border-radius: 0 !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.125), 0 3px 1px -2px rgba(0, 0, 0, 0.178), 0 1px 5px 0 rgba(0, 0, 0, 0.106) !important;
+    }
+
+
+/*Main header description*/
+@media all {
+    .skin-custom .main-header .navbar {
+        background-color: #ecf0f5;
+    }
+
+    .navbar .navbar-nav > li > a {
+        padding: 15px;
+    }
+
+    .navbar, .navbar.navbar-default {
+        color: #555;
+    }
+}
+/*Main header description end*/
+/*Main sidebar*/
+@media all {
+
+    .main-sidebar {
+        padding-top: 0px;
+    }
+
+    .sidebar {
+        background-color: #fff;
+        height: 100% !important;
+        padding: 0;
+    }
+
+    .main-sidebar .nav-sidebar > .nav-item > .nav-link.active {
+        color: #fff;
+        background-color: #00b1b3;
+    }
+
+    .nav-pills .nav-link:not(.active):hover {
+        color: #00b1b3;
+    }
+
+    .main-sidebar .nav-treeview > .nav-item > .nav-link.active, .sidebar-dark-primary .nav-treeview > .nav-item > .nav-link.active:hover {
+        color: #fff;
+        background-color: rgba(0,0,0,.2);
+    }
+
+    .main-sidebar .nav-sidebar > .nav-item > .nav-link {
+        margin: 0;
+    }
+
+    .main-sidebar .nav-sidebar > .nav-item > .nav-treeview {
+        background-color: rgba(0,0,0,.05)
+    }
+
+    .sidebar .nav-pills .nav-link {
+        padding: 12px;
+        border-radius: 0;
+    }
+
+    .main-sidebar .sidebar-menu > li .ion {
+        margin-right: 5px;
+    }
+}
+/*Main sidebar end*/
+
+/*User panel*/
+@media all {
+    .user-panel hr {
+        width: 90%;
+        border-top-color: rgba(30, 40, 44, 0.2);
+        margin: 0 0 -1px 0;
+        margin-left: 5%;
+    }
+
+    .user-panel {
+        color: #fff !important;
+        padding: 0;
+    }
+
+    .logo-lg img {
+        height: 40px;
+        width: 140px;
+    }
+
+    .logo-mini img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .user-panel .logo {
+        -webkit-transition: width 0.3s ease-in-out;
+        -o-transition: width 0.3s ease-in-out;
+        transition: width 0.3s ease-in-out;
+        display: block;
+        float: left;
+        height: 50px;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+        width: 230px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        padding: 0 15px 20px 0;
+        font-weight: 300;
+        overflow: hidden;
+        color: #fff;
+    }
+
+    .user-panel .logo .logo-lg {
+        display: block;
+        color: #fff;
+        font-family: Jura;
+    }
+
+    .user-panel .logo {
+        width: 100%;
+        float: none;
+    }
+
+    .user-panel .logo .logo-mini {
+        display: none;
+    }
+}
+/*User panel end*/
+@media (min-width: 992px) {
+    .sidebar-mini.sidebar-collapse .main-sidebar:hover input[type=search],
+    .sidebar-mini.sidebar-collapse .main-sidebar:hover .user-panel .logo-lg {
+        display: initial;
+    }
+
+    .sidebar-mini.sidebar-collapse .main-sidebar:hover .user-panel .logo-mini {
+        display: none;
+    }
+}
+/*Sidebar mini*/
+@media all {
+    .sidebar-mini.sidebar-collapse .main-sidebar .user-panel .logo-mini {
+        display: initial;
+    }
+
+    .sidebar-mini.sidebar-collapse .main-sidebar .user-panel .logo {
+        padding-left: 15px;
+    }
+
+    .sidebar-mini.sidebar-collapse .main-sidebar .nav-link {
+        padding-left: 22px;
+    }
+
+    .sidebar-mini.sidebar-collapse .main-sidebar .logo-lg,
+    .sidebar-mini.sidebar-collapse .main-sidebar input[type=search] {
+        display: none;
+    }
+
+    .sidebar-mini.sidebar-collapse .main-sidebar #btn_go {
+        padding-left: 5px;
+    }
+
+    .sidebar-mini.sidebar-collapse .main-sidebar .user-panel ul > li:nth-child(2),
+    .sidebar-mini.sidebar-collapse .main-sidebar .user-panel hr {
+        display: none !important;
+        -webkit-transform: translateZ(0);
+    }
+
+    .sidebar-mini.sidebar-collapse .main-sidebar .user-panel ul > li:first-child img {
+        max-height: 60px;
+    }
+
+    .sidebar-mini.sidebar-collapse .main-sidebar .sidebar-menu > li > .treeview-menu {
+        margin: 0 1px;
+        background: rgba(30, 40, 44, 1);
+    }
+}
+/*Sidebar mini end*/
+
+/*Menu hover effect*/
+@media all {
+
+    .skin-custom .sidebar-menu > li > a {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        position: relative;
+        z-index: 2;
+        text-decoration: none;
+        color: #ffffff;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+    .skin-custom .sidebar-menu > li a:hover {
+        border-bottom: 0px;
+        color: #fff;
+    }
+
+    .skin-custom .sidebar-menu > li a:after {
+        content: "";
+        height: 100%;
+        left: 0;
+        top: 0;
+        width: 0px;
+        position: absolute;
+        transition: all 0.3s ease 0.15s;
+        -webkit-transition: all 0.3s ease 0.15s;
+        z-index: -1;
+    }
+
+    .skin-custom .sidebar-menu > li a:hover:after {
+        width: 100%;
+    }
+
+
+    .skin-custom .sidebar-menu li.active > a {
+        color: #7fb8ff;
+        background: rgba(30, 40, 44, 0.5);
+    }
+
+
+    .skin-custom .sidebar-menu > li a:after {
+        background: rgba(30, 40, 44, 0.3);
+    }
+}
+/*Menu hover effect end*/
