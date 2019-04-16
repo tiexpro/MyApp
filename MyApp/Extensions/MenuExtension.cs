@@ -112,7 +112,7 @@ namespace MyApp.Extensions
                 a.AddClass("active");
             }
 
-            if (url.Length == 1 && act.StartsWith("/Dashboard"))
+            if (url.Length == 1 && item.type != 0 && act == @"/")
             {
                 a.AddClass("active");
             }
